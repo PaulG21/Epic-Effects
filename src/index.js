@@ -36,11 +36,21 @@ hideButtons.forEach(hideButton =>
     cardHide.style.transform = "rotateY(0deg)";
 }));
 
+// splash page scroll up effect
 
-// Logo lenght algorithm 
+const scrollArrows = document.querySelector(".arrows");
+const splashPage = document.querySelector(".splash-page");
 
-const logo = document.querySelectorAll("#logo path");
-for(let i = 0; i<logo.length; i++){
-  console.log(`Letter ${i} is ${logo[i].getTotalLength()}`)
-};
+scrollArrows.addEventListener("click", () => {
+  splashPage.style.transform ="translateY(-100%)"
+})
+
+
+
+// Logo length algorithm 
+
+// const logo = document.querySelectorAll("#logo path");
+// for(let i = 0; i<logo.length; i++){
+//   console.log(`Letter ${i} is ${logo[i].getTotalLength()}`)
+// };
 
