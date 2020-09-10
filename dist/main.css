@@ -16,7 +16,7 @@ body {
   height: 100%;
   overflow: hidden;
   display: block;
-  transition: transform 1s;
+  transition: transform 0.75s;
   transform: translateY(0%);
 }
 

@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Epic Effects</title>
 
+  <!-- LinkedIn feature image -->
+    <meta property="og:title" content="Epic Effects" />
+    <meta property="og:video" content="./src/video/epic-effects-gif.mov" />
+    <meta property="og:description" content="Welcome to Epic Effects, where users can implement epic effects and or stylings to their personal project with a simple click of a button." />
+    <meta property="og:url" content="https://paulg21.github.io/Epic-Effects/" />
+
   <!-- styles -->
   <link rel="stylesheet" href="./dist/main.css" text="text/css" >
   <link rel="stylesheet" href="./src/styles/nav_bar.css" type="text/css" >
@@ -19,6 +25,9 @@
 
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/6190240379.js" crossorigin="anonymous"></script>
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -86,7 +95,10 @@
           <button class="reveal-button">Reveal Code</button>
         </div>
         <div class="card-back">
-          <pre><code class="css">
+          <pre><code class="css html">
+// HTML
+button --> class="glow-on-hover" type="button">Hover, Click, and Hold
+
 .glow-on-hover {
   width: 220px;
   height: 50px;
@@ -160,6 +172,9 @@
         </div>
           <div class="card-back">
             <pre><code class="css javascript">
+// HTML
+button --> class="bubbly-button">Click Me!
+
 .bubbly-button {
   padding: 1em 2em;
   appearance: none;
@@ -277,6 +292,9 @@ for (var i = 0; i < bubblyButtons.length; i++) { bubblyButtons[i].addEventListen
         </div>
         <div class="card-back">
           <pre><code class="css"> 
+// HTML 
+a tag --> class="collision-button">Hover Over Me!
+
 .collision-button:before, .collision-button:after {
   position: absolute;
   top: 50%;

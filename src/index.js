@@ -36,6 +36,7 @@ hideButtons.forEach(hideButton =>
     cardHide.style.transform = "rotateY(0deg)";
 }));
 
+
 // splash page scroll up effect
 
 const scrollArrows = document.querySelector(".arrows");
