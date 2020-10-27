@@ -10,7 +10,7 @@ Welcome to Epic Effects, where users can implement epic effects and or stylings 
   * (BONUS) Navigation bar will have categories which users can choose from to only receive effects for the chosen category.
   
 ## Wireframes 
-![Wireframe] (https://wireframe.cc/fkNw7g)
+![Wireframe](https://wireframe.cc/fkNw7g)
 
 ## Architecture and Technology 
   * Vanilla Javascript
