@@ -10,7 +10,6 @@
 }
 
 /* Glow button */
-
 .glow-on-hover {
   width: 220px;
   height: 50px;
@@ -25,11 +24,11 @@
 }
 
 .glow-on-hover:before {
-  content: '';
+  content: "";
   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
   position: absolute;
   top: -2px;
-  left:-2px;
+  left: -2px;
   background-size: 400%;
   z-index: -1;
   filter: blur(5px);
@@ -37,7 +36,7 @@
   height: calc(100% + 4px);
   animation: glowing 20s linear infinite;
   opacity: 0;
-  transition: opacity .3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
 }
 
@@ -55,7 +54,7 @@
 
 .glow-on-hover:after {
   z-index: -1;
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -66,14 +65,17 @@
 }
 
 @keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
-
-
 /* Burst button */
-
 .bubbly-button {
   padding: 1em 2em;
   appearance: none;
@@ -88,12 +90,14 @@
   height: 50px;
   border-radius: 10px;
 }
+
 .bubbly-button:focus {
   outline: 0;
 }
+
 .bubbly-button:before, .bubbly-button:after {
   position: absolute;
-  content: '';
+  content: "";
   display: block;
   width: 140%;
   height: 100%;
@@ -102,27 +106,32 @@
   transition: all ease-in-out 0.5s;
   background-repeat: no-repeat;
 }
+
 .bubbly-button:before {
   display: none;
   top: -75%;
   background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 20%, #ff0081 20%, transparent 30%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
   background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
 }
+
 .bubbly-button:after {
   display: none;
   bottom: -75%;
   background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
   background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
 }
+
 .bubbly-button:active {
   transform: scale(0.9);
   background-color: #e60074;
   box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
 }
+
 .bubbly-button.animate:before {
   display: block;
   animation: topBubbles ease-in-out 0.75s forwards;
 }
+
 .bubbly-button.animate:after {
   display: block;
   animation: bottomBubbles ease-in-out 0.75s forwards;
@@ -137,7 +146,7 @@
   }
   100% {
     background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
-    background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
   }
 }
 @keyframes bottomBubbles {
@@ -149,38 +158,41 @@
   }
   100% {
     background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
-    background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
   }
 }
-
 /* Collision Button */
-
 .collision-button:before, .collision-button:after {
   position: absolute;
   top: 50%;
-  content: '';
+  content: "";
   width: 20px;
   height: 20px;
   background-color: #8ba63c;
   border-radius: 50%;
   z-index: -1;
 }
+
 .collision-button:before {
   left: -20px;
   transform: translate(-50%, -50%);
 }
+
 .collision-button:after {
   right: -20px;
   transform: translate(50%, -50%);
 }
+
 .collision-button:hover {
   color: #e2e9ce;
 }
+
 .collision-button:hover:before {
   animation: criss-cross-left 0.8s both;
   animation-direction: alternate;
   z-index: -1;
 }
+
 .collision-button:hover:after {
   animation: criss-cross-right 0.8s both;
   animation-direction: alternate;
@@ -215,7 +227,6 @@
     height: 375px;
   }
 }
-
 @keyframes criss-cross-right {
   0% {
     right: -20px;
@@ -231,3 +242,5 @@
     height: 375px;
   }
 }
+
+/*# sourceMappingURL=buttons.css.map */
